@@ -1,0 +1,87 @@
+/* COMMON */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+ul {
+  list-style: none;
+  width: 100%;
+  background: rgb(235, 235, 235);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+ul li {
+  margin: 10px 10px 20px 5px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+}
+
+/* Todo List header */
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+header {
+  margin: 40px 0px;
+  text-align: center;
+}
+
+header .logo {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 41);
+}
+
+header img {
+  width: 25%;
+  margin-bottom: 10px;
+}
+
+header input {
+  width: 30%;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0px 10px;
+  border: 1px solid black;
+}
+
+header button {
+  border: 1px solid black;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Main */
+.todo-list h2 {
+  text-align: center;
+}
+
+/* Actions */
+header button:focus {
+  outline: none;
+}
+
+header button:active {
+  box-shadow: inset 0px 0px 2px;
+}
+
+main ul li i:active {
+  transform: scale(1.1);
+  color: red;
+}
+
+
+
+
+
+
