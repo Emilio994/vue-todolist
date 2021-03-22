@@ -20,7 +20,8 @@
           <div class="logo">
             <img src="img/Logo.png" alt="">
           </div>
-          <div class="my-input">
+          <!-- Input & Button -->
+          <div class="my-inputs">
             <input @keyup.13='addToDo' v-model='todo' placeholder='Nuovo Todo' type="text">
             <button @click='addToDo'>Aggiungi</button>
           </div>
@@ -29,14 +30,15 @@
         <!-- Main -->
         <main>
           <div class="todo-list">
+            <!-- Lista ToDo -->
             <ul v-if='todoList.length > 0'>
               <li v-for='(key, index) in todoList'>
                 {{ key }}
                 <i @click='removeToDo(index)' class="fas fa-times"></i>
               </li>
             </ul>
-
-            <h2 v-else>Nessun Todo !</h2>
+            <!-- Warning lista vuota -->
+            <h2 v-else>Nessun Todo !</h2>            
           </div>
         </main>
       </div>
